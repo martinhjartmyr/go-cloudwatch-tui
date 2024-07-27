@@ -189,7 +189,7 @@ func handleEventStreamAsync(stream *cloudwatchlogs.StartLiveTailEventStream) {
 		default:
 			// Handle on-stream exceptions
 			if err := stream.Err(); err != nil {
-				log.Fatalf("Error occured during streaming: %v", err)
+				log.Fatalf("Error occurred during streaming: %v", err)
 			} else if event == nil {
 				app.QueueUpdateDraw(func() {
 					addConsoleRow("Stream is Closed")
