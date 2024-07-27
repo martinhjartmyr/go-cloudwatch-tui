@@ -1,4 +1,4 @@
-module go-cloudwatch-tui
+module github.com/martinhjartmyr/go-cloudwatch-tui
 
 go 1.22.4
 
